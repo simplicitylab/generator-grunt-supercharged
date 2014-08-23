@@ -4,9 +4,7 @@ A GruntJS generator for Yeoman that creates an optimized GruntJS project inspire
 
 ### Optimization 1 : autoloading grunt plugins
 
-By using the gruntjs module '[load-grunt-tasks](https://www.npmjs.org/package/load-grunt-tasks)' you don't need to manually load each task which can be cumbersome.
-
-This module will read the dependencies in your package.json  and load grunt tasks that match the provided patterns.
+By using the gruntjs module '[load-grunt-tasks](https://www.npmjs.org/package/load-grunt-tasks)' you don't need to manually load each task which can be cumbersome. This module will read the dependencies in your package.json  and load grunt tasks that match the provided patterns.
 
 #### before
 
@@ -25,7 +23,35 @@ This module will read the dependencies in your package.json  and load grunt task
 
 ### Optimization 2 : Splitting configuration in individual files
 
+The module [load-grunt-config](https://www.npmjs.org/package/load-grunt-config) lets you break up your Gruntfile config by task. Every task has its own javascript file defined in the folder grunt.
 
+#### folder structure
+
+	- myproject/
+	-- Gruntfile.js
+	-- grunt/
+	--- aliases.yaml
+	--- concat.js
+	--- uglify.js
+
+
+#### grunt/uglify.js
+
+	module.exports = {
+		dist: {
+    		files: {
+      			'dist/js/build.min.js': ['dist/js/build.js']
+    		}
+  		}
+	};
+	
+The module requires an aliasas file where you can register your task
+
+### grunt/aliases.yaml
+
+	default:
+		- 'concat'
+  		- 'uglify'
 
 <br />
 
