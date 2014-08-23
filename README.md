@@ -67,6 +67,8 @@ Simply prepend “newer:” to any of your tasks pipes
 		- 'newer:concat'
   		- 'newer:uglify'
   		
+<br/>  		
+  		
 ## License
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)  		
 
