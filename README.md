@@ -59,7 +59,7 @@ The module requires an aliasas file (aliases.yaml) where you can register your t
 
 The module [grunt-newer](https://www.npmjs.org/package/grunt-newer) builds a local cache and only execute tasks on files that changed since the last task has runned. This can speedup the build process enormously !
 
-Simply prepending “newer:” to any of your tasks pipes 
+Simply prepend “newer:” to any of your tasks pipes 
 
 ### grunt/aliases.yaml
 
