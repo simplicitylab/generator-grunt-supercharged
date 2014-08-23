@@ -57,7 +57,7 @@ The module requires an aliasas file (aliases.yaml) where you can register your t
 
 	default:
 		- 'concat'
-  		- 'uglify'
+		- 'uglify'
 
 <br />
 
@@ -71,7 +71,7 @@ Simply prepend “newer:” to any of your tasks pipes
 
 	default:
 		- 'newer:concat'
-  		- 'newer:uglify'
+		- 'newer:uglify'
   		
 <br/>  		
   		

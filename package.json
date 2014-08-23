@@ -1,6 +1,6 @@
 {
   "name": "generator-grunt-supercharged",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A GruntJS generator for Yeoman that creates an optimised GruntJS project inspired by the HTML5rocks article 'Supercharging your Gruntfile'",
   "author":{
     "name": "Glenn De Backer",
