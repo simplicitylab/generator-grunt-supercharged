@@ -20,7 +20,7 @@ This module will read the dependencies in your package.json  and load grunt task
 #### after
 	require('load-grunt-tasks')(grunt);
 
-<br />
+<br /> 
 
 
 ### Optimization 2 : Splitting configuration in individual files
