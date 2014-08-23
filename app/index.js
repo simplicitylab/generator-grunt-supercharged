@@ -23,6 +23,10 @@ module.exports = yeoman.generators.Base.extend({
         message : 'Your project name',
         default : this.appname // Default to current folder name
       }, function (answers) {
+        
+        // store app name 
+        this.app_name = answers.name;
+        
         done();
       }.bind(this));
     },
@@ -50,7 +54,11 @@ module.exports = yeoman.generators.Base.extend({
      **/
     copyFiles: function() {
         
-        this.copy("_package.json", "package.json");
+        var context = { 
+            app_name : this.app_name 
+        };
+      
+        this.template("_package.json", "package.json", context);
         this.copy("_gruntfile.js", "Gruntfile.js");
         
         this.copy("_aliases.yaml", "grunt/aliases.yaml");
