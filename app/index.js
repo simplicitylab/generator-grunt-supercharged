@@ -13,6 +13,22 @@ module.exports = yeoman.generators.Base.extend({
     },
     
     /**
+     * Prompt for user input
+     **/
+    promptTask: function () {
+      var done = this.async();
+      this.prompt({
+        type    : 'input',
+        name    : 'name',
+        message : 'Your project name',
+        default : this.appname // Default to current folder name
+      }, function (answers) {
+        done();
+      }.bind(this));
+    },
+
+    
+    /**
      * Creates directories
      **/
     createDirectories: function () {
