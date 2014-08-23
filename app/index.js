@@ -13,10 +13,11 @@ module.exports = yeoman.generators.Base.extend({
     },
     
     /**
-     * Prompt for user input
+     * Prompt for app name
      **/
-    promptTask: function () {
+    promptAppName: function () {
       var done = this.async();
+      
       this.prompt({
         type    : 'input',
         name    : 'name',
@@ -31,6 +32,27 @@ module.exports = yeoman.generators.Base.extend({
       }.bind(this));
     },
 
+    /**
+     * Prompt for app description
+     **/
+    promptAppDescription: function () {
+      var done = this.async();
+      
+      this.prompt({
+        type    : 'input',
+        name    : 'description',
+        message : 'Your project description',
+        default : ''
+      }, function (answers) {
+        
+        // store app description
+        this.app_description = answers.description;
+        
+        done();
+      }.bind(this));
+    },
+
+  
     
     /**
      * Creates directories
@@ -55,7 +77,8 @@ module.exports = yeoman.generators.Base.extend({
     copyFiles: function() {
         
         var context = { 
-            app_name : this.app_name 
+            app_name : this.app_name,
+            app_description: this.app_description
         };
       
         this.template("_package.json", "package.json", context);
