@@ -45,7 +45,7 @@ The module [load-grunt-config](https://www.npmjs.org/package/load-grunt-config) 
   		}
 	};
 	
-The module requires an aliasas file where you can register your task
+The module requires an aliasas file (aliases.yaml) where you can register your task
 
 ### grunt/aliases.yaml
 
