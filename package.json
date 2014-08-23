@@ -1,8 +1,17 @@
 {
   "name": "generator-grunt-supercharged",
   "version": "0.1.0",
-  "description": "Creates empty GruntJS project based on HTML5rocks article 'Supercharging your Gruntfile'",
-  "keywords": ["yeoman-generator"],
+  "description": "Creates an optimized GruntJS project as described in the HTML5rocks article 'Supercharging your Gruntfile'",
+  "author":{
+    "name": "Glenn De Backer",
+    "email": "glenn@simplicity.be",
+    "url": "http://www.glenndebacker.be"
+  },
+  "keywords": ["yeoman-generator", "grunt"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simplicitylab/generator-grunt-supercharged.git"
+  },
   "dependencies": {
     "yeoman-generator": "^0.16.0"
   }
