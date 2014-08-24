@@ -78,9 +78,9 @@ Simply prepend “newer:” to any of your tasks pipes
   		
 <br/>  		
 
-## Optional packages
+## Optional modules
 
-You can (optionally) select following packages through the interactive terminal. 
+You can (optionally) enable following handy modules through the interactive terminal. 
 
 * [grunt-contrib-watch](https://www.npmjs.org/package/grunt-contrib-watch)
 * [grunt-contrib-clean](https://www.npmjs.org/package/grunt-contrib-clean)
