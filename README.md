@@ -2,9 +2,19 @@
 
 A GruntJS generator for Yeoman that creates an optimized GruntJS project inspired by the HTML5rocks article '[Supercharging your Gruntfile](http://www.html5rocks.com/en/tutorials/tooling/supercharging-your-gruntfile/)'
 
+<br/>
+
+
+### Installation
+
+	$ npm install generator-grunt-supercharged
+
+<br/>
+
 ### Usage
 
-	yo grunt-supercharged
+	$ yo grunt-supercharged
+
 
 <br/>
 
