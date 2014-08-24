@@ -1,2 +1,2 @@
 default:
-  - 'newer:uglify'
+    - 'newer:uglify'<%= plugin_clean %><%= plugin_watch %>

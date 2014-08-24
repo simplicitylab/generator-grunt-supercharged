@@ -4,13 +4,6 @@ A GruntJS generator for Yeoman that creates an optimized GruntJS project inspire
 
 <br/>
 
-
-### Installation
-
-	$ npm install generator-grunt-supercharged
-
-<br/>
-
 ### Usage
 
 	$ yo grunt-supercharged
@@ -84,7 +77,16 @@ Simply prepend “newer:” to any of your tasks pipes
 		- 'newer:uglify'
   		
 <br/>  		
-  		
+
+## Optional packages
+
+You can (optionally) select following packages through the interactive terminal. 
+
+* [grunt-contrib-watch](https://www.npmjs.org/package/grunt-contrib-watch)
+* [grunt-contrib-clean](https://www.npmjs.org/package/grunt-contrib-clean)
+
+<br/>
+
 ## License
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)  		
 
