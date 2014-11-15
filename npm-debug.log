@@ -1,21 +1,57 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'link' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.32
-4 verbose linkPkg /Users/glenndebacker/Documents/projects/javascript/yeoman/generator-grunt-supercharged
-5 error Error: EACCES, symlink '/Users/glenndebacker/Documents/projects/javascript/yeoman/generator-grunt-supercharged'
-5 error  { [Error: EACCES, symlink '/Users/glenndebacker/Documents/projects/javascript/yeoman/generator-grunt-supercharged']
-5 error   errno: 3,
-5 error   code: 'EACCES',
-5 error   path: '/Users/glenndebacker/Documents/projects/javascript/yeoman/generator-grunt-supercharged' }
-6 error Please try running this command again as root/Administrator.
-7 error System Darwin 14.0.0
-8 error command "node" "/usr/local/bin/npm" "link"
-9 error cwd /Users/glenndebacker/Documents/projects/javascript/yeoman/generator-grunt-supercharged
-10 error node -v v0.10.32
-11 error npm -v 1.4.28
-12 error path /Users/glenndebacker/Documents/projects/javascript/yeoman/generator-grunt-supercharged
-13 error code EACCES
-14 error errno 3
-15 error stack Error: EACCES, symlink '/Users/glenndebacker/Documents/projects/javascript/yeoman/generator-grunt-supercharged'
-16 verbose exit [ 3, true ]
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/glenndebacker/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package.tgz
+12 verbose folder .
+13 info prepublish generator-grunt-supercharged@0.1.6
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/glenndebacker/.npm/1f1177db-tar.lock
+16 silly lockFile c4478000-t-supercharged-0-1-6-package-tgz tar:///Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package.tgz
+17 verbose lock tar:///Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package.tgz /Users/glenndebacker/.npm/c4478000-t-supercharged-0-1-6-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile c4478000-t-supercharged-0-1-6-package-tgz tar:///Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package.tgz
+21 silly lockFile c4478000-t-supercharged-0-1-6-package-tgz tar:///Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package.tgz
+22 silly lockFile 7db7caa4-grunt-supercharged-0-1-6-package /Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package
+23 verbose lock /Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package /Users/glenndebacker/.npm/7db7caa4-grunt-supercharged-0-1-6-package.lock
+24 silly lockFile 7db7caa4-grunt-supercharged-0-1-6-package /Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package
+25 silly lockFile 7db7caa4-grunt-supercharged-0-1-6-package /Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 error addLocal Could not install .
+29 error Error: EACCES, open '/Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package/package.json'
+29 error  { [Error: EACCES, open '/Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package/package.json']
+29 error   errno: 3,
+29 error   code: 'EACCES',
+29 error   path: '/Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package/package.json' }
+30 error Please try running this command again as root/Administrator.
+31 error System Darwin 14.0.0
+32 error command "node" "/usr/local/bin/npm" "publish"
+33 error cwd /Users/glenndebacker/Documents/projects/javascript/yeoman/generator-grunt-supercharged
+34 error node -v v0.10.32
+35 error npm -v 1.4.28
+36 error path /Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package/package.json
+37 error code EACCES
+38 error errno 3
+39 error stack Error: EACCES, open '/Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package/package.json'
+40 verbose exit [ 3, true ]

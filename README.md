@@ -82,19 +82,22 @@ Simply prepend “newer:” to any of your tasks pipes
 
 You can enable following handy modules through the interactive terminal. 
 
+* [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify)
 * [grunt-contrib-watch](https://www.npmjs.org/package/grunt-contrib-watch)
 * [grunt-contrib-clean](https://www.npmjs.org/package/grunt-contrib-clean)
+* [grunt-contrib-sass](https://github.com/gruntjs/grunt-contrib-sass)
+* [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint)
 
 <br/>
 		
 ## Release notes
 
-* 0.16 
+* 0.1.8 
 	* updated package versions
 	* grunt-contrib-uglify is now optional
 	* added grunt-contrib-sass as optional module 
 	* added grunt-contrib-jshint as optional module
-* 0.15 - initial release 
+* 0.1.5 - initial release 
 
 
 ## License
