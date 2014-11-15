@@ -6,7 +6,6 @@
 		"grunt": "~0.4.5",
 		"load-grunt-config" : "~0.13.1",
 		"load-grunt-tasks" : "~0.6.0",
-		"grunt-newer": "~0.7.0",
-		"grunt-contrib-uglify" : "~0.5.0"<%= plugin_clean %><%= plugin_watch %>
+		"grunt-newer": "~0.7.0"<%= plugin_uglify %><%= plugin_clean %><%= plugin_watch %><%= plugin_sass %><%= plugin_jshint %>
 	}
 }

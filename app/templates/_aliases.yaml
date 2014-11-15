@@ -1,2 +1,1 @@
-default:
-    - 'newer:uglify'<%= plugin_clean %><%= plugin_watch %>
+default:<%= plugin_uglify %><%= plugin_clean %><%= plugin_watch %><%= plugin_sass %><%= plugin_jshint %>

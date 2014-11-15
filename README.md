@@ -86,9 +86,17 @@ You can enable following handy modules through the interactive terminal.
 * [grunt-contrib-clean](https://www.npmjs.org/package/grunt-contrib-clean)
 
 <br/>
+		
+## Release notes
+
+* 0.16 
+	* updated package versions
+	* grunt-contrib-uglify is now optional
+	* added grunt-contrib-sass as optional module 
+	* added grunt-contrib-jshint as optional module
+* 0.15 - initial release 
+
 
 ## License
-[MIT License](http://en.wikipedia.org/wiki/MIT_License)  		
-
- 
+[MIT License](http://en.wikipedia.org/wiki/MIT_License)   
 

@@ -1,3 +1,3 @@
 module.exports = {
-    clean: []
+    dist: []
 };
