@@ -81,6 +81,18 @@ module.exports = yeoman.generators.Base.extend({
             {
                 name: 'grunt-contrib-jshint',
                 value: 'jshint'
+            }, 
+            {
+                name: 'grunt-contrib-concat',
+                value: 'concat'
+            }, 
+            {
+                name: 'grunt-contrib-jslint',
+                value: 'jslint'
+            }, 
+            {
+                name: 'grunt-contrib-csslint',
+                value: 'csslint'
             }         
         ]
 
@@ -140,6 +152,15 @@ module.exports = yeoman.generators.Base.extend({
 
         var txt_npm_plugin_jshint   = '';
         var txt_alias_plugin_jshint = '';        
+
+        var txt_npm_plugin_concat   = '';
+        var txt_alias_plugin_concat = '';  
+        
+        var txt_npm_plugin_jslint   = '';
+        var txt_alias_plugin_jslint = '';  
+        
+        var txt_npm_plugin_csslint   = '';
+        var txt_alias_plugin_csslint = '';  
         
         
         var txt_yaml_newline       = '';
@@ -195,6 +216,33 @@ module.exports = yeoman.generators.Base.extend({
             this.copy("_jshint.js", "grunt/jshint.js");
         }
         
+        // handle option grunt-contrib-concat
+        if ( this.optional_packages.indexOf('concat') != -1 ) {
+            
+            txt_npm_plugin_concat   = ',\n\t\t"grunt-contrib-concat" : "~0.5.0"';
+            txt_alias_plugin_concat = "\n    - 'concat'";
+            
+            this.copy("_concat.js", "grunt/concat.js");
+        }        
+    
+        // handle option grunt-contrib-jslint
+        if ( this.optional_packages.indexOf('jslint') != -1 ) {
+            
+            txt_npm_plugin_jslint   = ',\n\t\t"grunt-jslint" : "~1.1.12"';
+            txt_alias_plugin_jslint = "\n    - 'jslint'";
+            
+            this.copy("_jslint.js", "grunt/jslint.js");
+        } 
+        
+        // handle option grunt-contrib-jslint
+        if ( this.optional_packages.indexOf('csslint') != -1 ) {
+            
+            txt_npm_plugin_csslint   = ',\n\t\t"grunt-contrib-csslint" : "~0.3.1"';
+            txt_alias_plugin_csslint = "\n    - 'csslint'";
+            
+            this.copy("_csslint.js", "grunt/csslint.js");
+        }         
+                
         var package_context = { 
             app_name : this.app_name,
             app_description: this.app_description,
@@ -202,7 +250,10 @@ module.exports = yeoman.generators.Base.extend({
             plugin_clean: txt_npm_plugin_clean,
             plugin_watch: txt_npm_plugin_watch,
             plugin_sass: txt_npm_plugin_sass,
-            plugin_jshint: txt_npm_plugin_jshint
+            plugin_jshint: txt_npm_plugin_jshint,
+            plugin_concat: txt_npm_plugin_concat,
+            plugin_jslint: txt_npm_plugin_jslint,
+            plugin_csslint: txt_npm_plugin_csslint
         };
       
         this.template("_package.json", "package.json", package_context);
@@ -212,7 +263,10 @@ module.exports = yeoman.generators.Base.extend({
             plugin_clean: txt_alias_plugin_clean,
             plugin_watch: txt_alias_plugin_watch,
             plugin_sass: txt_alias_plugin_sass,
-            plugin_jshint: txt_alias_plugin_jshint            
+            plugin_jshint: txt_alias_plugin_jshint,
+            plugin_concat: txt_alias_plugin_concat,
+            plugin_jslint: txt_alias_plugin_jslint,
+            plugin_csslint: txt_alias_plugin_csslint
         };
               
         this.template("_aliases.yaml", "grunt/aliases.yaml", aliases_context);

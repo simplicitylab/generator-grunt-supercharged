@@ -19,39 +19,22 @@
 7 verbose parsed url   href: '.' }
 8 silly lockFile 3a52ce78- .
 9 verbose lock . /Users/glenndebacker/.npm/3a52ce78-.lock
-10 verbose tar pack [ '/Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package.tgz',
-10 verbose tar pack   '.' ]
-11 verbose tarball /Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package.tgz
-12 verbose folder .
-13 info prepublish generator-grunt-supercharged@0.1.6
-14 silly lockFile 1f1177db-tar tar://.
-15 verbose lock tar://. /Users/glenndebacker/.npm/1f1177db-tar.lock
-16 silly lockFile c4478000-t-supercharged-0-1-6-package-tgz tar:///Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package.tgz
-17 verbose lock tar:///Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package.tgz /Users/glenndebacker/.npm/c4478000-t-supercharged-0-1-6-package-tgz.lock
-18 silly lockFile 1f1177db-tar tar://.
-19 silly lockFile 1f1177db-tar tar://.
-20 silly lockFile c4478000-t-supercharged-0-1-6-package-tgz tar:///Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package.tgz
-21 silly lockFile c4478000-t-supercharged-0-1-6-package-tgz tar:///Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package.tgz
-22 silly lockFile 7db7caa4-grunt-supercharged-0-1-6-package /Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package
-23 verbose lock /Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package /Users/glenndebacker/.npm/7db7caa4-grunt-supercharged-0-1-6-package.lock
-24 silly lockFile 7db7caa4-grunt-supercharged-0-1-6-package /Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package
-25 silly lockFile 7db7caa4-grunt-supercharged-0-1-6-package /Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package
-26 silly lockFile 3a52ce78- .
-27 silly lockFile 3a52ce78- .
-28 error addLocal Could not install .
-29 error Error: EACCES, open '/Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package/package.json'
-29 error  { [Error: EACCES, open '/Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package/package.json']
-29 error   errno: 3,
-29 error   code: 'EACCES',
-29 error   path: '/Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package/package.json' }
-30 error Please try running this command again as root/Administrator.
-31 error System Darwin 14.0.0
-32 error command "node" "/usr/local/bin/npm" "publish"
-33 error cwd /Users/glenndebacker/Documents/projects/javascript/yeoman/generator-grunt-supercharged
-34 error node -v v0.10.32
-35 error npm -v 1.4.28
-36 error path /Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package/package.json
-37 error code EACCES
-38 error errno 3
-39 error stack Error: EACCES, open '/Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.6/package/package.json'
-40 verbose exit [ 3, true ]
+10 silly lockFile 3a52ce78- .
+11 silly lockFile 3a52ce78- .
+12 error addLocal Could not install .
+13 error Error: EACCES, mkdir '/Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.8'
+13 error  { [Error: EACCES, mkdir '/Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.8']
+13 error   errno: 3,
+13 error   code: 'EACCES',
+13 error   path: '/Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.8' }
+14 error Please try running this command again as root/Administrator.
+15 error System Darwin 14.0.0
+16 error command "node" "/usr/local/bin/npm" "publish"
+17 error cwd /Users/glenndebacker/Documents/projects/javascript/yeoman/generator-grunt-supercharged
+18 error node -v v0.10.32
+19 error npm -v 1.4.28
+20 error path /Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.8
+21 error code EACCES
+22 error errno 3
+23 error stack Error: EACCES, mkdir '/Users/glenndebacker/.npm/generator-grunt-supercharged/0.1.8'
+24 verbose exit [ 3, true ]

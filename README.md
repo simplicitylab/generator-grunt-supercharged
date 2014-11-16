@@ -92,6 +92,9 @@ You can enable following handy modules through the interactive terminal.
 		
 ## Release notes
 
+* 0.1.9
+    * added grunt-jslint as optional module
+    * added grunt-csslint as optional module 
 * 0.1.8 
 	* updated package versions
 	* grunt-contrib-uglify is now optional

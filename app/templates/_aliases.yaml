@@ -1,1 +1,1 @@
-default:<%= plugin_uglify %><%= plugin_clean %><%= plugin_watch %><%= plugin_sass %><%= plugin_jshint %>
+default:<%= plugin_uglify %><%= plugin_clean %><%= plugin_watch %><%= plugin_sass %><%= plugin_jshint %><%= plugin_concat %><%= plugin_jslint %><%= plugin_csslint %>
