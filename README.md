@@ -87,14 +87,18 @@ You can enable following handy modules through the interactive terminal.
 * [grunt-contrib-clean](https://www.npmjs.org/package/grunt-contrib-clean)
 * [grunt-contrib-sass](https://github.com/gruntjs/grunt-contrib-sass)
 * [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint)
+* [grunt-contrib-concat](https://github.com/gruntjs/grunt-contrib-concat)
+* [grunt-jslint](https://github.com/stephenmathieson/grunt-jslint)
+* [grunt-contrib-csslint](https://github.com/gruntjs/grunt-contrib-csslint)
 
 <br/>
 		
 ## Release notes
 
-* 0.1.9
+* 0.2.0
+    * added grunt-contrib-concat as optional module
     * added grunt-jslint as optional module
-    * added grunt-csslint as optional module 
+    * added grunt-contrib-csslint as optional module 
 * 0.1.8 
 	* updated package versions
 	* grunt-contrib-uglify is now optional
